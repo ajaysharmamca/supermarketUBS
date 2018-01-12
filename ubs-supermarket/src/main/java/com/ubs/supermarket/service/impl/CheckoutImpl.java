@@ -14,7 +14,7 @@ import com.ubs.supermarket.service.Basket;
 import com.ubs.supermarket.service.Checkout;
 
 @Component
-public class CheckoutImp implements Checkout {
+public class CheckoutImpl implements Checkout {
 	
 	@Autowired
 	private Basket basket;
