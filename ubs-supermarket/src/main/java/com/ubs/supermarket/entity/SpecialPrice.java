@@ -9,18 +9,12 @@ import javax.persistence.Table;
 
 @Entity
 
-//@Table(name="special_price", uniqueConstraints=
-//@UniqueConstraint(columnNames={"quantity", "item_id"}))
-
 @Table(name="special_price")
 
 @IdClass(SpecialPricePK.class)
 
 public class SpecialPrice {
 	
-//	@Id
-//	@GeneratedValue
-//    private Long id;
 	@Id
 	@Column(nullable=false)
     private int quantity = 1;
@@ -50,14 +44,6 @@ public class SpecialPrice {
 		this(price);
 		this.quantity = quantity;
 	}
-
-	/*public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}*/
 
 	public int getQuantity() {
 		return quantity;

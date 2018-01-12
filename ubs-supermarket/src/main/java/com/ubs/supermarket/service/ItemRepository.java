@@ -7,7 +7,6 @@ import com.ubs.supermarket.entity.Item;
 
 public interface ItemRepository extends JpaRepository<Item, Long> {
 	
-	 Item findByName(String name);
 	 Item findById(Long id);
 
 }
